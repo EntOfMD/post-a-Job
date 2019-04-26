@@ -18,6 +18,8 @@ if (app.get('env') === 'development') {
   syncOptions.force = true;
 }
 
+require('./routes/htmlRoutes')(app);
+
 db.sequelize.sync(syncOptions).then(() => {
   app.listen(PORT, err => {
     if (err) throw err;
