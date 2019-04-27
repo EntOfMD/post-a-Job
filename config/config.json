@@ -1,6 +1,11 @@
 {
   "development": {
-    "use_env_local": "MYSQL_URI"
+    "use_env_local": "MYSQL_URI",
+    "username": "MYSQL_USER",
+    "password": "MYSQL_PASS",
+    "database": "MYSQL_DB",
+    "host": "localhost",
+    "dialect": "mysql"
   },
   "test": {
     "use_env_testing": "MYSQL_URI"
